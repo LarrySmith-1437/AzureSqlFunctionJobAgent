@@ -9,10 +9,10 @@ Consider this as template/sample code you can use as the basis for your own solu
 
 And hey, this is an on-ramp to having jobs that you can kick off via WebHook or any other method of job start that Azure Functions gives you.
 
-I used:
-Dapper
+I used these 3rd party libraries:
+Dapper, 
 Serilog
 
 Configuration is via Environment Variables, which is preffered and more secure than leaving config files laying around.  You can change this to go back to config files if you want.
 
-Host this in a paid-for App Serfvice Plan if you intend to host long-running jobs, else your serverless-compute will cut your jobs short on time.
+Host this in a paid-for App Service Plan if you intend to host long-running jobs, else your serverless-compute will cut your jobs short on time.
