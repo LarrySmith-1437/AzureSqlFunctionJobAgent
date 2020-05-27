@@ -1,6 +1,8 @@
 # AzureSqlFunctionJobAgent
 Replacing Azure Sql Elastic Jobs with scheduled Azure Functions
 
+Visual Studio 2019, .Net Core 3.1
+
 Since MS has been years late in completing Elastic Jobs for Azure Sql, there was a need to have more control over the scheduled execution of sql code.  This way, you can add your own custom code, preferred logging, and connection string management, or anything else you need above and beyond the limitations that Elastic Jobs imposes.
 
 Further, I've had Elastic jobs get hung-up in production, requiring Microsoft intervention to get the jobs running again, which was a disaster and an outage.  Again, a solution like this will give you back the control you need in deploying or restarting jobs.
