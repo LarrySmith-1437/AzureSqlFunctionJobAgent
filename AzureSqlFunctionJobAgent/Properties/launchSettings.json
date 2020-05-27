@@ -1,0 +1,21 @@
+{
+  "profiles": {
+    "AzureSqlFunctionJobAgent": {
+      "commandName": "Project",
+      "environmentVariables": {
+        //using debug Environment Variables lets us set this up as if we were using the Configuration blade of the Azure Function app.
+        "DatabaseConnectionString": "Server=;Database=PropaneTestTimerFunctions;User ID=;Password=;Connect Timeout=30;Application Name=AzureSqlFunctionJobAgent;",
+        "FUNCTION_EVERY1MINUTE_TIMER": "* * * * *",
+        "FUNCTION_EVERY5MINUTE_TIMER": "*/5 * * * *",
+        "FUNCTION_EVERYHOUR_TIMER": "0 * * * *",
+        "Logging:LogLevel": "Debug",
+        "Logging:AzureStorageAccount:batchPostingLimit": "2",
+        "Logging:AzureStorageAccount:ConnectionString": "DefaultEndpointsProtocol=https;AccountName=;AccountKey=;EndpointSuffix=core.windows.net", //provide your own azure storage account connection string here
+        "Logging:AzureStorageAccount:Container": "mylogcontainer", //whatever container name you'd like for your functions.
+        "Logging:AzureStorageAccount:Filename": "AzureSqlFunctionJobAgent.{yyyy}{MM}{dd}.log",
+        "Logging:AzureStorageAccount:PeriodSeconds": "5",
+        "Logging:OutputTemplate": "[{Timestamp:yyyy-MM-dd HH:mm:ss}][{MachineName}][{Level:u3}] {Message:lj}{NewLine}{Exception}"
+      }
+    }
+  }
+}

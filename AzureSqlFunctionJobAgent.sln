@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30104.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureSqlFunctionJobAgent", "AzureSqlFunctionJobAgent\AzureSqlFunctionJobAgent.csproj", "{C004354E-6C80-4108-8462-674872ECE394}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DbTestFunctions", "DbTestFunctions\DbTestFunctions.sqlproj", "{6AC21F53-2A2C-491A-B6F8-1CEFB39ADE98}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C004354E-6C80-4108-8462-674872ECE394}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C004354E-6C80-4108-8462-674872ECE394}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C004354E-6C80-4108-8462-674872ECE394}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C004354E-6C80-4108-8462-674872ECE394}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AC21F53-2A2C-491A-B6F8-1CEFB39ADE98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AC21F53-2A2C-491A-B6F8-1CEFB39ADE98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AC21F53-2A2C-491A-B6F8-1CEFB39ADE98}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6AC21F53-2A2C-491A-B6F8-1CEFB39ADE98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AC21F53-2A2C-491A-B6F8-1CEFB39ADE98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AC21F53-2A2C-491A-B6F8-1CEFB39ADE98}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {597955F8-E571-4DF3-A703-1B6A78C14C6F}
+	EndGlobalSection
+EndGlobal
