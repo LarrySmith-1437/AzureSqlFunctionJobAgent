@@ -66,5 +66,14 @@
     <Build Include="dbo\Stored Procedures\dbo.usp_Every1Minute.sql" />
     <Build Include="dbo\Stored Procedures\dbo.usp_Every5Minutes.sql" />
     <Build Include="dbo\Stored Procedures\dbo.usp_EveryHour.sql" />
+    <Build Include="dbo\Stored Procedures\dbo.MutexLock.sql" />
+    <Build Include="dbo\Stored Procedures\dbo.MutexUnlock.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <ArtifactReference Include="$(DacPacRootPath)\Extensions\Microsoft\SQLDB\Extensions\SqlServer\AzureV12\SqlSchemas\master.dacpac">
+      <HintPath>$(DacPacRootPath)\Extensions\Microsoft\SQLDB\Extensions\SqlServer\AzureV12\SqlSchemas\master.dacpac</HintPath>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+      <DatabaseVariableLiteralValue>master</DatabaseVariableLiteralValue>
+    </ArtifactReference>
   </ItemGroup>
 </Project>
